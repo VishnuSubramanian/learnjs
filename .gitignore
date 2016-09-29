@@ -8,13 +8,13 @@ bin-release/
 # Other files and folders
 .settings/
 .sass-cache/
+.README.md
 
 # Executables
 *.swf
 *.air
 *.ipa
 *.apk
-*.md
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
