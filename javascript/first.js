@@ -39,9 +39,19 @@ console.log(myWholeSeconds);
 
 // math example 2
 // This example is to round off the float value to the nearest integers
-// Math has both property and methods.
+// Math object has both property and methods.
 // This is a method.
 var temperature = 32.6;
 console.log(Math.round(temperature));
 temperature = 43.8;
 console.log(Math.floor(temperature));
+
+// math for random number
+// Random number always throw a random number from 0 to 1, so here is the code
+var changing =  Math.random();
+// This above variable with show deicmal results from 0 to 0.9999
+
+var changing = (Math.random() * 6);
+// this code with produce random number from 0 to 6 but in a decimal value. If you need a indeger value then use math.floor object
+var changing = Math.floor(Math.random() * 6);
+// This code will take the decimal value from the math.random and convert it to a integer value.
