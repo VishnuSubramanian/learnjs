@@ -36,3 +36,12 @@ var myWholeSeconds = secondsPerDay * yearsAlive;
 console.log("My whole life seconds is working ...")
 document.write("My whole seconds i lived so far is" + myWholeSeconds + "Wow, that is amazing");
 console.log(myWholeSeconds);
+
+// math example 2
+// This example is to round off the float value to the nearest integers
+// Math has both property and methods.
+// This is a method.
+var temperature = 32.6;
+console.log(Math.round(temperature));
+temperature = 43.8;
+console.log(Math.floor(temperature));
