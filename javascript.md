@@ -112,6 +112,7 @@ Two types of Javascript:
                   console.log(y);  // ReferenceError: y is not defined     
 
   /*********** Variable & Function hoisting **********/
+
               Need to check that later..
 
   /************  Global variable ***********/
@@ -121,6 +122,7 @@ Two types of Javascript:
                 Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
 
   /**************  Const *************/
+
                   You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
 
                   Eg :: const hello_world = "hello hi";
@@ -154,7 +156,24 @@ Two types of Javascript:
                           5. undefined
                           6. symbol
 
-  Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.                        
+  Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.            
+
+                /***** Data type conversion *****/
+
+      JavaScript is a dynamically typed language. That means you don't have to specify the data type of a variable when you declare it, and data types are converted automatically as needed during script execution. So, for example, you could define a variable as follows:
+
+      var answer = 42;
+      answer = "Thanks for all the fish...";
+      Because JavaScript is dynamically typed, this assignment does not cause an error message.
+
+      In expressions involving numeric and string values with the + operator, JavaScript converts numeric values to strings. For example, consider the following statements:
+
+      x = "The answer is " + 42 // "The answer is 42"
+      y = 42 + " is the answer" // "42 is the answer"
+      In statements involving other operators, JavaScript does not convert numeric values to strings. For example:
+
+      "37" - 7 // 30
+      "37" + 7 // "377"         
 
 
 

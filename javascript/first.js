@@ -13,3 +13,18 @@ final_result += " and i am from " + city + " and working as a " + work ;
 console.log("At the end of the program..");
 console.log(final_result);
 document.write(final_result);
+
+// maths
+var secondsPerMinute = 60;
+var minutesPerHour = 60;
+var hoursPerDay = 24;
+console.log("Everything is going fine so far");
+var secondsPerDay = secondsPerMinute * minutesPerHour * hoursPerDay;
+console.log("var secondsPerDay is working..");
+document.write(secondsPerDay);
+console.log(secondsPerDay);
+var yearsAlive = 24;
+var myWholeSeconds = secondsPerDay * yearsAlive;
+console.log("My whole life seconds is working ...")
+document.write("My whole seconds i lived so far is" + myWholeSeconds + "Wow, that is amazing");
+console.log(myWholeSeconds);
