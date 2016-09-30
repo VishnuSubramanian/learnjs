@@ -58,3 +58,14 @@ console.log(changing);
 var changing = Math.floor(Math.random() * 6);
 console.log(changing);
 // This code will take the decimal value from the math.random and convert it to a integer value.
+
+
+// random number generator challenge
+// getting an input from the user
+// convert the string into number by using parseInt
+// then use the random math method to produce random number from 0 to the number provided by the user
+// that it..:)
+
+var input = prompt("What is your favorite number?");
+var conversion = parseInt(input);
+var result = (Math.random() * conversion);
