@@ -49,9 +49,12 @@ console.log(Math.floor(temperature));
 // math for random number
 // Random number always throw a random number from 0 to 1, so here is the code
 var changing =  Math.random();
+console.log(changing);
 // This above variable with show deicmal results from 0 to 0.9999
 
 var changing = (Math.random() * 6);
+console.log(changing);
 // this code with produce random number from 0 to 6 but in a decimal value. If you need a indeger value then use math.floor object
 var changing = Math.floor(Math.random() * 6);
+console.log(changing);
 // This code will take the decimal value from the math.random and convert it to a integer value.
