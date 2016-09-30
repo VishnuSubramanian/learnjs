@@ -68,6 +68,95 @@ Two types of Javascript:
 
         3. With the keyword let. For example, let y = 13. This syntax can be used to declare a block scope local variable. See Variable scope below.
 
+        /******** Evaluating variables ********/
+
+        1. A variable declared using the var statement with no initial value specified has the value undefined.
+
+        2. An attempt to access an undeclared variable or an attempt to access an identifier declared with let statement before initialization will result in a ReferenceError exception being thrown:
+
+            Eg:
+              1.  var a;
+                console.log("The value of a is " + a); // The value of a is undefined
+
+              2.  console.log("The value of b is " + b); // Uncaught ReferenceError: b is not defined
+
+              3.  console.log("The value of c is " + c); // The value of c is undefined
+                var c;
+
+              4.  console.log("The value of x is " + x); // Uncaught ReferenceError: x is not defined
+                let x;
+
+        3.  The undefined value converts to NaN when used in numeric context.
+            Eg:
+                    var a;
+                    a + 2;  // Evaluates to NaN
+
+        4. When you evaluate a null variable, the null value behaves as 0 in numeric contexts and as false in boolean contexts. For example:
+            Eg:
+                    var n = null;
+                    console.log(n * 32); // Will log 0 to the console
+
+        /********* variable scope **********/
+
+        When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+                For example: the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
+
+      Eg 1->      if (true) {
+                  var x = 5;
+                }
+                console.log(x);  // x is 5
+
+      Eg 2 ->     if (true) {
+                    let y = 5;
+                  }
+                  console.log(y);  // ReferenceError: y is not defined     
+
+  /*********** Variable & Function hoisting **********/
+              Need to check that later..
+
+  /************  Global variable ***********/
+
+                Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
+
+                Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
+
+  /**************  Const *************/
+                  You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
+
+                  Eg :: const hello_world = "hello hi";
+
+                  A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
+
+                  The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.
+
+                  You cannot declare a constant with the same name as a function or variable in the same scope. For example:
+
+                  // THIS WILL CAUSE AN ERROR
+                  function f() {};
+                  const f = 5;
+
+                  // THIS WILL CAUSE AN ERROR ALSO
+                  function f() {
+                    const g = 5;
+                    var g;
+
+                    //statements
+                  }
+
+/******************* Data structures and Types ***************/    
+
+
+                  --> Basic value type in the variable
+                          1. Numbers
+                          2. String
+                          3. Boolean
+                          4. null
+                          5. undefined
+                          6. symbol
+
+  Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.                        
+
+
 
 javascript variables are the very important. It's keyword is var
 Consider variable as a box you can create as many variables to your application to stop the confusion on which variable you placed which value, you can specify a variable with a unique name too..
@@ -78,13 +167,6 @@ Consider variable as a box you can create as many variables to your application 
           3. Variable names should contain only letters, numbers, $, _ sign is only allowed
           Always use a descriptive variable names so that you can understand the functionality of the variable.
 
-      --> Basic value type in the variable
-              1. Numbers
-              2. String
-              3. Boolean
-              4. null
-              5. undefined
-              6. symbol
 
           variables can be declared by two ways '  or "
           If you need to have a quote mark inside a string then simply use / and then put the quote inside the string then the interpreter will consider it as a normal string value.

@@ -1,5 +1,7 @@
 // This is an external js file so you need to link the js file to the index.html to tell html page that it has a external js file
 console.log("Begnning of the program");
+
+// variable is declared to save the value and put in a box with the reference name
 var name = prompt("what is your name?");
 var age = prompt("What is your age?");
 console.log("At the middle of the program..");
