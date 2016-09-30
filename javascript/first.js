@@ -69,3 +69,12 @@ console.log(changing);
 var input = prompt("What is your favorite number?");
 var conversion = parseInt(input);
 var result = (Math.random() * conversion);
+
+// two random number conversion
+document.write("Enter the top and bottom number to generate a random number ")
+var input = prompt("What is your first number?");
+var topNumber = parseInt(input);
+var secondInput = prompt("what is the bottom number?");
+var bottomNumber = parseInt(secondInput);
+var result = Math.floor(Math.random() * (topNumber - bottomNumber +1) + bottomNumber);
+console.log(result);
