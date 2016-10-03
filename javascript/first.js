@@ -164,3 +164,14 @@ if(correct === 5)
 else {
     document.write("Yikes ! You got no reward");
 }
+
+/* Learning functions..
+Converting the random challenge into a function block
+remember always use the functions at the top of the file..
+*/
+function randomGenerator(){
+    var randomValue = Math.floor(Math.random() * 6) +1;
+    alert(randomValue);
+}
+
+randomGenerator();

@@ -173,7 +173,7 @@ Two types of Javascript:
                   let block scope variables. If the const keyword is omitted,
                   the identifier is assumed to represent a variable.
 
-                  You cannot declare a constant with the same name as a 
+                  You cannot declare a constant with the same name as a
                   function or variable in the same scope. For example:
 
                   // THIS WILL CAUSE AN ERROR
@@ -312,4 +312,4 @@ Consider variable as a box you can create as many variables to your application 
                     -> debugging the most important thing in the Javascript so when you encountered any error they check it in the browser javascript console to rectify the problem.
 
                             console.log("check where the mistake arise when there is a huge line of code");
-                            This function is handy when there is a lots of lines in the code and you need to check where the error occurs       
+                            This function is handy when there is a lots of lines in the code and you need to check where the error occurs  
