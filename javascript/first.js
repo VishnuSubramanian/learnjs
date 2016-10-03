@@ -232,3 +232,17 @@ function gettingBothRandomNumber(lowerlimit, upperlimit)
 }
 
 console.log(gettingBothRandomNumber(1,100));
+
+// Check where the code get breaks...
+
+function gettingBothRandomNumber(lowerlimit, upperlimit)
+{
+  if(isNaN(lowerlimit) || isNaN(upperlimit))
+  {
+    throw new console.error("Both should be a number");
+  }
+  var randomNumberValue = Math.floor(Math.random() * (upperlimit - lowerlimit + 1)) + lowerlimit;
+  return randomNumberValue;
+}
+
+console.log(gettingBothRandomNumber(1,100));
