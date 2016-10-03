@@ -183,7 +183,42 @@ function getRandomNumber(){
     var randomValue = Math.floor(Math.random() * 6) +1;
     return randomValue;
 }
+// return statement should be the last thing added in the function because when the
+// interpreter reaches the return statement it will immediately exit the function..
+
 // when you are returning a value from the function then you can use it in any forms you need..
 console.log(getRandomNumber());
 document.write(getRandomNumber());
 var randomNumber = getRandomNumber();
+
+// Javascript function which accept an piece of information...
+// Arguments that are adding in the functions as parameters...
+// The arguments which is stored in a variable called Parameters...
+/* From this below code you can generate any upperlimit number from which you
+need a random number need to be generated.. by using function you can easily
+pick the upperlimit of the number where the random number need to be generated...
+*/
+function gettingRandomNumber(upperlimit)
+{
+      var randomValue = Math.floor(Math.random() * upperlimit) +1;
+      return randomValue;
+}
+console.log(gettingRandomNumber(10));
+
+// another example
+
+function goToCoffeeDay(drinks,snacks)
+{
+  alert("Get me " + drinks + "and " + snacks + " from the coffee Day");
+}
+goToCoffeeDay("cafefrappe","indulgence");
+
+// This below code is to get the area of the rectangle
+
+function toFindArea (width, length, unit)
+{
+  var area = width * length;
+  return area + " " + unit;
+}
+
+console.log(toFindArea(10,20, "sq ft"));
