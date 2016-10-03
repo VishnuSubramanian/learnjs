@@ -169,9 +169,21 @@ else {
 Converting the random challenge into a function block
 remember always use the functions at the top of the file..
 */
+// functions can reduce the amount of time you spend in repeating the block
 function randomGenerator(){
     var randomValue = Math.floor(Math.random() * 6) +1;
     alert(randomValue);
 }
-
+// This below calls the function...so it is the must when you need to access the function..
 randomGenerator();
+
+// Writing a function which returns a value .....
+
+function getRandomNumber(){
+    var randomValue = Math.floor(Math.random() * 6) +1;
+    return randomValue;
+}
+// when you are returning a value from the function then you can use it in any forms you need..
+console.log(getRandomNumber());
+document.write(getRandomNumber());
+var randomNumber = getRandomNumber();
