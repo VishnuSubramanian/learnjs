@@ -1,5 +1,5 @@
 # learnjs
-This read me file is for my reference. While learning javascript need to take notes on it.
+This read me file is for my reference. While learning javascript need to take notes on it.           
 
     /************************* JavaScript ***********************/
 
@@ -7,7 +7,8 @@ Javascript is a cross platform, object oriented scripting language.
 
 It is light-weight, small Language.. Javascript is amazing..
 
-Javascript connect with the Objects of the host(Eg:Web Browser) to provide programatic control over the host.
+Javascript connect with the Objects of the host(Eg:Web Browser) to provide programatic
+ control over the host.
 
 Javascript contain a standard library of objects such as Array, Date, Math ..etc
 core set of language elements such as Operators, control structures and Statements..
@@ -15,10 +16,13 @@ core set of language elements such as Operators, control structures and Statemen
 Two types of Javascript:
 
       1. Client-side Javascript
-              Supplying objects to control the browser and its Document Object Model (DOM). Act according to the user response eg: Mouse click, Form submission.. etc
+              Supplying objects to control the browser and its Document Object Model
+               (DOM). Act according to the user response eg: Mouse click, Form
+               submission.. etc
       2. Server-Side Javascript
               Supplying objects relevant to the running javascript on the server.
-              Creating communication between the database and the client-side javascript, or the file manipulations on the server.
+              Creating communication between the database and the client-side
+              javascript, or the file manipulations on the server.
 
   /***************  Java & JavaScript  ***********/
 
@@ -26,7 +30,8 @@ Two types of Javascript:
 
   Javascript has a prototype based object model and Java has class based object model.
 
-  Prototype based object model provides dynamic inheritance that is, What is inherited can vary to individual objects.
+  Prototype based object model provides dynamic inheritance that is,
+  What is inherited can vary to individual objects.
   Javascript allows function without any special declarative requirements.
 
   Javascript is a free-form language compared to the java.
@@ -34,15 +39,18 @@ Two types of Javascript:
 
   /************* ECMA Specifications **************/
 
-  ECMA is a standardized, international programming language for JavaScript and the current ECMA is ECMA 6..
+  ECMA is a standardized, international programming language for JavaScript
+  and the current ECMA is ECMA 6..
 
   /************* Grammar and Types ***************/
 
   Javascript is Case-sensitive and use Unicode Character set.
   In Javascript,
-      1. Instructions are called statements, and they are separated by     semicolon(;).
+      1. Instructions are called statements, and they are separated by  semicolon(;).
       2. Space, tabs, new lines are called White-spaces.
-      3. Javascript get scanned from left to right and converted into a sequence of input elements tokens, control characters, line terminators, comments or white-spaces.
+      3. Javascript get scanned from left to right and converted into a sequence
+      of input elements tokens, control characters, line terminators,
+      comments or white-spaces.
 
   /************** JavaScript declarations *************/
 
@@ -50,7 +58,8 @@ Two types of Javascript:
 
     1. Var --> Declares a variable and optionally initializing it to a value.
 
-    2. let --> Declares a block scope local variable and optionally initialize to a value.
+    2. let --> Declares a block scope local variable and optionally
+    initialize to a value.
 
     3. const --> Declare a read only named constant.
 
@@ -58,32 +67,43 @@ Two types of Javascript:
 
     1. You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
 
-    2. A JavaScript identifier must start with a letter, underscore, or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+    2. A JavaScript identifier must start with a letter, underscore, or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is
+    case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
 
         /****** Declaring Variables ******/
 
-        1. With the keyword var. For example, var x = 10. This syntax can be used to declare both local and global variables.
+        1. With the keyword var. For example, var x = 10. This syntax can be used
+        to declare both local and global variables.
 
-        2. By simply assigning it a value. For example, x = 10. This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+        2. By simply assigning it a value. For example, x = 10. This always
+        declares a global variable. It generates a strict JavaScript warning.
+         You shouldn't use this variant.
 
-        3. With the keyword let. For example, let y = 13. This syntax can be used to declare a block scope local variable. See Variable scope below.
+        3. With the keyword let. For example, let y = 13.
+        This syntax can be used to declare a block scope local variable.
+        See Variable scope below.
 
         /******** Evaluating variables ********/
 
-        1. A variable declared using the var statement with no initial value specified has the value undefined.
+        1. A variable declared using the var statement with no initial
+        value specified has the value undefined.
 
-        2. An attempt to access an undeclared variable or an attempt to access an identifier declared with let statement before initialization will result in a ReferenceError exception being thrown:
+        2. An attempt to access an undeclared variable or an attempt to
+        access an identifier declared with let statement before
+        initialization will result in a ReferenceError exception being thrown:
 
             Eg:
               1.  var a;
                 console.log("The value of a is " + a); // The value of a is undefined
 
-              2.  console.log("The value of b is " + b); // Uncaught ReferenceError: b is not defined
+              2.  console.log("The value of b is " + b); // Uncaught ReferenceError:
+              b is not defined
 
               3.  console.log("The value of c is " + c); // The value of c is undefined
                 var c;
 
-              4.  console.log("The value of x is " + x); // Uncaught ReferenceError: x is not defined
+              4.  console.log("The value of x is " + x); // Uncaught ReferenceError:
+              x is not defined
                 let x;
 
         3.  The undefined value converts to NaN when used in numeric context.
@@ -91,15 +111,23 @@ Two types of Javascript:
                     var a;
                     a + 2;  // Evaluates to NaN
 
-        4. When you evaluate a null variable, the null value behaves as 0 in numeric contexts and as false in boolean contexts. For example:
+        4. When you evaluate a null variable, the null value behaves as 0 in
+        numeric contexts and as false in boolean contexts. For example:
             Eg:
                     var n = null;
                     console.log(n * 32); // Will log 0 to the console
 
         /********* variable scope **********/
 
-        When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
-                For example: the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
+        When you declare a variable outside of any function, it is called a
+        global variable, because it is available to any other code in the c
+        urrent document. When you declare a variable within a function,
+        it is called a local variable, because it is available only within
+        that function.
+                For example: the following code will log 5, because the
+                scope of x is the function (or global context) within
+                which x is declared, not the block,
+                which in this case is an if statement.
 
       Eg 1->      if (true) {
                   var x = 5;
@@ -117,21 +145,36 @@ Two types of Javascript:
 
   /************  Global variable ***********/
 
-                Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
+                Global variables are in fact properties of the global object.
+                 In web pages the global object is window, so you can set and
+                  access global variables using the window.variable syntax.
 
-                Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
+                Consequently, you can access global variables declared in
+                one window or frame from another window or frame by
+                specifying the window or frame name. For example, if a variable called phoneNumber
+                is declared in a document,
+                 you can refer to this variable from an iframe as parent.phoneNumber.
 
   /**************  Const *************/
 
-                  You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
+                  You can create a read-only, named constant with the const keyword.
+                  The syntax of a constant identifier is the same as
+                  for a variable identifier: it must start with a letter,
+                  underscore or dollar sign and can contain alphabetic,
+                  numeric, or underscore characters.
 
                   Eg :: const hello_world = "hello hi";
 
-                  A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
+                  A constant cannot change value through assignment or be
+                  re-declared while the script is running.
+                  It has to be initialized to a value.
 
-                  The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.
+                  The scope rules for constants are the same as those for
+                  let block scope variables. If the const keyword is omitted,
+                  the identifier is assumed to represent a variable.
 
-                  You cannot declare a constant with the same name as a function or variable in the same scope. For example:
+                  You cannot declare a constant with the same name as a 
+                  function or variable in the same scope. For example:
 
                   // THIS WILL CAUSE AN ERROR
                   function f() {};
