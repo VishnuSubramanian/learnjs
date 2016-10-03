@@ -78,3 +78,27 @@ var secondInput = prompt("what is the bottom number?");
 var bottomNumber = parseInt(secondInput);
 var result = Math.floor(Math.random() * (topNumber - bottomNumber +1) + bottomNumber);
 console.log(result);
+
+// conditioning statements
+
+var question1 = prompt("Capital of India is?");
+if (question1 === Delhi) {
+  document.write("Your answer is right !!");
+}else {
+  document.write("Your answer is wrong !!");
+}
+
+//program testing for conditional statemtent
+var correctGuess = false;
+var randomNumber = math.floor((math.random() * 6) +1);
+var guess = prompt("Thing it is between 1 to 6");
+if(parseInt(guess) === randomNumber)
+{
+  // document.write("You guessed the right number" + randomNumber);
+  correctGuess = true;
+}
+if(correctGuess === true) {
+  document.write("You guessed the Correct number" + randomNumber);
+}else {
+  document.write("You guessed the Wrong number" + randomNumber);
+}

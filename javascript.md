@@ -173,7 +173,42 @@ Two types of Javascript:
       In statements involving other operators, JavaScript does not convert numeric values to strings. For example:
 
       "37" - 7 // 30
-      "37" + 7 // "377"         
+      "37" + 7 // "377"  
+
+                  /************  Objects *************/
+
+      The Object constructor creates an object wrapper for the given value. If the value is null or undefined, it will create and return an empty object, otherwise, it will return an object of a Type that corresponds to the given value. If the value is an object already, it will return the value.      
+
+      /*********** Properties of the Object Constructor *************/
+
+      1. object.length
+      2. object.prototype
+
+      /*********** Methods of the Object Constructor ****************/
+
+       Some of the methods of the object constructors are,
+
+       1. Object.assign()
+            Creates a new object by copying the values of all enumerable own properties from one or more source objects to a target object.   
+
+       2. Object.create()
+            Creates a new object with the specified prototype object and properties.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
