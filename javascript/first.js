@@ -222,3 +222,13 @@ function toFindArea (width, length, unit)
 }
 
 console.log(toFindArea(10,20, "sq ft"));
+
+// random number challenge...
+
+function gettingBothRandomNumber(lowerlimit, upperlimit)
+{
+  var randomNumberValue = Math.floor(Math.random() * (upperlimit - lowerlimit + 1)) + lowerlimit;
+  return randomNumberValue;
+}
+
+console.log(gettingBothRandomNumber(1,100));
