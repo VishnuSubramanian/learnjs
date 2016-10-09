@@ -278,3 +278,49 @@ while (guess !== randomNumber1) {
 }
 document.write("<p> The random number was " + randomNumber1 + "</p>");
 document.write("<p> Add it tooks the computer" + attempts + "to make the correct guess </p>");
+
+
+//  refractoring the long code and use the DRY concept in it...
+
+// This is the color challenge code.. that is pretty amazing..
+
+var html ="";
+var red;
+var green;
+var blue;
+var rgbColor;
+
+for(i=0; i<10; i+=i)
+{
+  red = Math.floor(Math.random() * 256);
+  green = Math.floor(Math.random() * 256);
+  blue = Math.floor(Math.random() * 256);
+  rgbColor = rgb(+ red + ',' + green + ',' + blue +);
+  html += "<div style=background-color:' + rgbColor +' > </div>";
+}
+document.write(html);
+
+// The same above code but while using functions to follow the DRY concepts...
+// to write a modular Javascript... :)
+
+
+var html ="";
+var red;
+var green;
+var blue;
+var rgbColor;
+
+function gettingRgbRandom()
+{
+  return Math.floor(Math.random() * 256);
+}
+
+for(i=0; i<10; i+=i)
+{
+  red = gettingRgbRandom();
+  green = gettingRgbRandom();
+  blue = gettingRgbRandom();
+  rgbColor = rgb(+ red + ',' + green + ',' + blue +);
+  html += "<div style=background-color:' + rgbColor +' > </div>";
+}
+document.write(html);
