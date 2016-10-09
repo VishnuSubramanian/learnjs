@@ -78,3 +78,26 @@ li:last-child {
 :empty {
 	background: #ededed;
 }
+
+
+/* Substring matching attribute selector */
+
+
+/*  Begins with selector */
+
+
+/* This ^ sign indicates the begins with option */
+
+a[href^="http://"] {
+	color: green;
+}
+
+
+/* Ends with selector */
+
+
+/* This $ sign indicates the ends with option */
+
+a[href$=".pdf"] {
+	color: violet;
+}
