@@ -246,3 +246,18 @@ function gettingBothRandomNumber(lowerlimit, upperlimit)
 }
 
 console.log(gettingBothRandomNumber(1,100));
+
+// Arrays loops and Objects
+// Using the while loop in the code.
+
+function randomNumberGenerator(upperlimit)
+{
+  return Math.floor(Math.random * upperlimit) + 1 ;
+}
+
+var counter = 0;
+while (counter < 10) {
+  var randomNumberIs = randomNumberGenerator(10);
+  document.write(randomNumberIs + '');
+  counter += 1;
+}
