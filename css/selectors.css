@@ -136,7 +136,7 @@ li:nth-child(3) {
 }
 
 
-/* You can also add expressions to the nth clild */
+/* You can also add expressions to the nth child */
 
 li:nth-child(an+b) {}
 
@@ -156,3 +156,45 @@ li:nth-of-type(4) {}
 /* This will select the last li type regardless of the list */
 
 li:nth-last-of-type(2) {}
+
+
+/* root and the target pseudo classes */
+
+
+/* root selector selects the top most value in the page */
+
+:root {}
+
+
+/* :not selector which refer that need not select those selectors */
+
+div:not(any specific id, or class, or anything) {}
+
+input:not([type="submit"]) {}
+
+li:not(:first-child) {}
+
+
+/* pseudo classes and pseudo elements */
+
+
+/************ Pseudo elements **********/
+
+
+/* This pseudo elements comes handy when you need to make the html clearner and when you dont have any access to the markup then you can use the pseudo elements.. This is amazing piece of creation :) */
+
+
+/* : defines the pseudo classes and the :: defines the pseudo elements but the browser with take both for both classes and the elements */
+
+p::first-line {
+	color: #ededed;
+	font-weight: 400;
+}
+
+
+/* You can target the first letter also using the pseudo elements :) */
+
+p::first-letter {
+	color: #ed5565;
+	font-weight: 800;
+}
