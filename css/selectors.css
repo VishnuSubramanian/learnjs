@@ -53,3 +53,28 @@ h1 + p {
 .btn ~ .btn {
 	margin-left: 20px;
 }
+
+
+/* Structural pseudo class */
+
+li:first-child {
+	background-color: #1ab394;
+}
+
+li:last-child {
+	background: #000;
+}
+
+
+/* only selector targets if the parent element has only one child element */
+
+:only {
+	background: #ed5565;
+}
+
+
+/* Empty selector targets when the elements doesn't contain any content in it */
+
+:empty {
+	background: #ededed;
+}
