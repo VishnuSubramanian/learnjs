@@ -261,3 +261,20 @@ while (counter < 10) {
   document.write(randomNumberIs + '');
   counter += 1;
 }
+// awesomeness of the while loop and the conditions
+var upperlimit = 10000;
+var randomNumber1 = randomNumberGenerator(upperlimit);
+var guess;
+var attempts = 0;
+
+function randomNumberGenerator(upperlimit)
+{
+  return Math.floor(Math.random * upperlimit) + 1 ;
+}
+
+while (guess !== randomNumber1) {
+  guess = randomNumberGenerator(upperlimit);
+  attempts += 1;
+}
+document.write("<p> The random number was " + randomNumber1 + "</p>");
+document.write("<p> Add it tooks the computer" + attempts + "to make the correct guess </p>");
