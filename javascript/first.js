@@ -324,3 +324,35 @@ for(i=0; i<10; i+=i)
   html += "<div style=background-color:' + rgbColor +' > </div>";
 }
 document.write(html);
+
+// Another way to write the same code as follows... with full of functions
+
+var html ="";
+var rgbColor;
+
+function gettingRgbRandom()
+{
+  return Math.floor(Math.random() * 256);
+}
+
+function gettingColor()
+{
+  var color="rgb(";
+  color +="gettingRgbRandom() + ','";
+  color +="gettingRgbRandom() + ','";
+  color +="gettingRgbRandom() + ','";
+  return color;
+
+}
+
+function print(message)
+{
+  document.write(message);
+}
+
+for(i=0; i<10; i+=i)
+{
+  rgbColor = gettingColor();
+  html += "<div style=background-color:' + rgbColor +' > </div>";
+}
+print(html);
