@@ -101,3 +101,58 @@ a[href^="http://"] {
 a[href$=".pdf"] {
 	color: violet;
 }
+
+
+/* contain with selector */
+
+
+/* sign astricks shows that contains that value in the element */
+
+a[href*="downloads"] {
+	color: yellow;
+}
+
+
+/* you can also specify or half of the name also*/
+
+a[href*="down"] {
+	color: blue;
+}
+
+
+/* Other psedo classes */
+
+
+/* nth child pseudo class structural class */
+
+li:nth-child(even) {
+	background: #52bab3;
+	color: #fff;
+}
+
+li:nth-child(3) {
+	background: #52bab3;
+	color: #fff;
+}
+
+
+/* You can also add expressions to the nth clild */
+
+li:nth-child(an+b) {}
+
+li:nth-child(2n+4) {}
+
+li:nth-child(-n+3) {}
+
+
+/* nth of type selector */
+
+
+/* to select a specific type regardless of the list */
+
+li:nth-of-type(4) {}
+
+
+/* This will select the last li type regardless of the list */
+
+li:nth-last-of-type(2) {}
