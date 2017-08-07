@@ -356,3 +356,5 @@ for(i=0; i<10; i+=i)
   html += "<div style=background-color:' + rgbColor +' > </div>";
 }
 print(html);
+
+console.log("Hello World");
