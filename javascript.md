@@ -1,9 +1,13 @@
 # learnjs
-This read me file is for my reference. While learning javascript need to take notes on it.           
+This read me file is for my reference. While learning javascript need to take notes on it.
+Javascript is Useful, Fun and available everywhere in the web.           
 
     /************************* JavaScript ***********************/
 
 Javascript is a cross platform, object oriented scripting language.
+
+What is a Scripting Language?
+A script or scripting language is a computer language with a series of commands within a file that is capable of being executed without being compiled. Good examples of server side scripting languages include Perl, PHP, and Python. The best example of a client side scripting language is JavaScript.
 
 It is light-weight, small Language.. Javascript is amazing..
 
