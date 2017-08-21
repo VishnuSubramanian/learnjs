@@ -358,3 +358,4 @@ for(i=0; i<10; i+=i)
 print(html);
 
 console.log("Hello World");
+alert("Hello World");
