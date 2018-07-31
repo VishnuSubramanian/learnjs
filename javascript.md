@@ -317,3 +317,4 @@ Consider variable as a box you can create as many variables to your application 
 
                             console.log("check where the mistake arise when there is a huge line of code");
                             This function is handy when there is a lots of lines in the code and you need to check where the error occurs  
+
