@@ -65,5 +65,17 @@ language basics ::
     Real interactivity on a website needs events. These are code structures which listen for things happening in browser, running code in response. The most obvious example is the click event, which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following into your console, then click on the current webpage:
 
 
+    Beginner's Course module: (First Step )
+    
+    1. What is Js?
+    2. A first Splash in Js -- Through practical examples by build Project
+    3. Troubleshooting in Js
+    4. Storing the data -- Variables 
+    5. Basic math -- Operators 
+    6. Handling text -- String
+    7. Useful String  build-in methods.
+    8. Arrays
+
+
 
 

@@ -2,8 +2,18 @@ var myHeading = document.querySelector('h1');
 myHeading.textContent = "Hello world!";
 
 var helloWorld = "Have a good day!";
+//data types to store data
+var checkingInfo = "correct"; //string
+var number      = 10; //number
+var setState   = true; //boolean
+var dumpNumbers = [1,2,3,4,5]; //array
 
-
+function returnArray (val)
+{
+    var val= [1,2,3,4,5];
+    return val;
+}
+console.log(returnArray(0));
 //Conditional Statement 
 var health = "good";
     if (health === "good")
