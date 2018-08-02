@@ -11,6 +11,44 @@ Introduction ::
 
 JavaScript ("JS" for short) is a full-fledged dynamic programming language that, when applied to an HTML document, can provide dynamic interactivity on websites. It was invented by Brendan Eich, co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation.
 
+ every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved.
+
+Application Programming Interface ( API's )
+  API's give extra Superpowes to use in your JavaScript Code.
+
+  APIs are ready-made sets of code building blocks that allow a developer to implement programs that would otherwise be hard or impossible to implement. They do the same thing for programming that ready-made furniture kits do for home building — it is much easier to take ready-cut panels and screw them together to make a bookshelf than it is to work out the design yourself, go and find the correct wood, cut all the panels to the right size and shape, find the correct-sized screws, and then put them together to make a bookshelf.
+
+  Two major Categories of API's
+    1. Third- Party API's ( Twitter API, Google Maps API...etc)
+    2. Browser API's (Geolocation API, DOM API, WebGL...etc)
+
+Browser Security :: 
+     Each Browser has a seperate bucket for running the code, These buckets are called "Excecution Environment". This means each tab runs mostly seperately and nothing can affect it.
+
+JavaScript running order :: 
+    When the browser encounters the block of the JavaScript code, It runs from the top to bottom order. So be careful in what order you puts in.
+
+Interpreted versus compiled Code :: 
+
+    Interpreted :: 
+        In interpreted languages, the code is run from top to bottom and the result of running the code is immediately returned. You don't have to transform the code into a different form before the browser runs it.
+
+    Compiled :: 
+        Compiled languages on the other hand are transformed (compiled) into another form before they are run by the computer. For example C/C++ are compiled into assembly language that is then run by the computer.
+
+    JavaScript is the lightweight Interpreted Programming language. 
+
+Server-side versus client side code :: 
+
+    Client Side :: 
+    You might also hear the terms server-side and client-side code, especially in the context of web development. Client-side code is code that is run on the user's computer — when a web page is viewed, the page's client-side code is downloaded, then run and displayed by the browser. In this JavaScript module we are explicitly talking about client-side JavaScript.
+
+    Server Side ::
+    Server-side code on the other hand is run on the server, then its results are downloaded and displayed in the browser.
+
+
+
+
 language basics :: 
 
 1. Variables
@@ -66,7 +104,7 @@ language basics ::
 
 
     Beginner's Course module: (First Step )
-    
+
     1. What is Js?
     2. A first Splash in Js -- Through practical examples by build Project
     3. Troubleshooting in Js
