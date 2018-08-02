@@ -46,7 +46,25 @@ Server-side versus client side code ::
     Server Side ::
     Server-side code on the other hand is run on the server, then its results are downloaded and displayed in the browser.
 
+Dynamic Versus Static code :: 
+    
+    Dynamic code :
+    The word dynamic is used to describe both client-side JavaScript, and server-side languages — it refers to the ability to update the display of a web page/app to show different things in different circumstances, generating new content as required.
 
+    Static Code:
+    A web page with no dynamically updating content is referred to as static — it just shows the same content all the time.
+
+Script loading Strategies ::
+
+    Async: 
+    Async scripts will download the script without blocking rendering the page and will execute it as soon as the script finishes downloading. You get no guarantee that scripts will run in any specific order, only that they will not stop the rest of the page from displaying. It is best to use async when the scripts in the page run independently from each other and depend on no other script on the page. 
+    <script async src="js/jquery">
+    <script async src="js/main">
+
+    Defer: 
+    Defer will run the scripts in the order they appear in the page and execute them as soon as the script and content are downloaded
+    <script defer src="js/jquery">
+    <script defer src="js/main">
 
 
 language basics :: 

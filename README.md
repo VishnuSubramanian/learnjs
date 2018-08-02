@@ -1,3 +1,3 @@
-# learnjs
+My Version of Learning JavaScript
 
-This is all about the Learning process i took to learn JavaScript
+JavaScript is a scripting or programming language that allows you to implement complex things on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS).
