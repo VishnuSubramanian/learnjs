@@ -132,6 +132,21 @@ language basics ::
     7. Useful String  build-in methods.
     8. Arrays
 
+    1 & 2 -- View the number's game to understand the First 1 and 2 Steps
+            guess.html
+
+    Types of Error :: 
+    There are usually two main types of error :: 
+    1. Syntax error
+    2. Logic error 
+
+    Syntax Error : 
+    These are spelling errors in your code that actually cause the program not to run at all, or stop working part way through — you will usually be provided with some error messages too. 
+
+    Logic Error : 
+    These are errors where the syntax is actually correct but the code is not what you intended it to be, meaning that program runs successfully but gives incorrect results. These are often harder to fix than syntax errors.        
+
+
 
 
 
