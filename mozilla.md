@@ -2,6 +2,8 @@
 
 ## Spend good amount of time in Understanding the Js basics. 
 
+##### Understand good things take TIME....  ###########
+
 This is amazing
 
 https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
@@ -145,6 +147,95 @@ language basics ::
 
     Logic Error : 
     These are errors where the syntax is actually correct but the code is not what you intended it to be, meaning that program runs successfully but gives incorrect results. These are often harder to fix than syntax errors.        
+
+
+    V. All About Variables :: 
+
+    A variable is a container for a value, like a number we might use in a sum, or a string that we might use as part of a sentence. But one special thing about variables is that their contained values can change.
+
+    Visit V.1 in core.js
+
+        Declaring a Variable :
+            To use a variable you've first got to create it — more accurately, we call this declaring the variable. To do this, we type the keyword var followed by the name you want to call your variable:
+                Eg: var myName;
+                    var Name = "Vishnu";
+                    var check = 20; 
+                    var statements = True;
+                    ...etc
+            ********************
+            *********
+            In JavaScript, all code instructions should end with a semi-colon (;) — your code may work correctly for single lines, but probably won't when you are writing multiple lines of code together. Try to get into the habit of including it.
+            *********
+            *********************
+            You can test whether these values now exist in the execution environment by typing just the variable's name
+            If there is no value in the variable container then they will return Undefined but if the Variable name doesn't exists then it will throw an error message. 
+
+        Initializing a Variable : 
+            Once you've declared a variable, you can initialize it with a value. You do this by typing the variable name, followed by an equals sign (=), followed by the value you want to give it. 
+            ********************
+            **********
+             If you write a multiline JavaScript program that declares and initializes a variable, you can actually declare it after you initialize it and it will still work. This is because variable declarations are generally done first before the rest of the code is executed. This is called hoisting. 
+             **********
+             ********************
+
+             Var hoisting -->
+             Because variable declarations (and declarations in general) are processed before any code is executed, declaring a variable anywhere in the code is equivalent to declaring it at the top. This also means that a variable can appear to be used before it's declared. This behavior is called "hoisting", as it appears that the variable declaration is moved to the top of the function or global code.
+             If you want to learn more about variable hoisting visit : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting
+
+        Updating a Variable : 
+            Once a variable has been initialized with a value , you can change (or update) that value by simply giving it a different value.
+            var myName = 20;
+            myName = "check";
+            console.log(myName);
+            Check this in the console, you will get the updated value for the variable.     
+            You can call a variable pretty much anything you like, but there are limitations. Generally you should stick to just using Latin characters (0-9, a-z, A-Z) and the underscore character.
+
+            Rules for naming the variables : 
+            ---You shouldn't use other characters because they may cause errors or be hard to understand for an            international audience.
+            ---Don't use underscores at the start of variable names — this is used in certain JavaScript constructs to     mean specific things, so may get confusing.
+            ---Don't use numbers at the start of variables. This isn't allowed and will cause an error.
+            ---A safe convention to stick to is so-called "lower camel case", where you stick together multiple words,     using lower case for the whole first word and then capitalize subsequent words. We've been using this       for our variable names in the article so far.
+            ---Make variable names intuitive, so they describe the data they contain. Don't just use single    letters/numbers, or big long phrases.
+            ---Variables are case sensitive — so myage is a different variable to myAge.
+            ---One last point — you also need to avoid using JavaScript reserved words as your variable names — by this, we mean the words that make up the actual syntax of JavaScript! So you can't use words like var, function, let, and for as variable names. Browsers will recognize them as different code items, and so you'll get errors. 
+
+        Variable Types : 
+            1. Numbers
+            2. Strings
+            3. Boolean
+            4. Arrays
+            5. Objects     
+
+            Numbers :
+            You can store numbers in variables, either whole numbers like 30 (also called integers) or decimal numbers like 2.456 (also called floats or floating point numbers). You don't need to declare variable types in JavaScript, unlike some other programming languages. When you give a variable a number value, you don't include quotes:
+            Eg: var numberInt = 50;
+                var numberfloat = 4.445;
+
+            Strings : 
+            Strings are pieces of text. When you give a variable a string value, you need to wrap it in single or double quote marks, otherwise JavaScript will try to intepret it as another variable name.
+            Eg: var nameAString = "Hello World, this is a String";
+
+            Boolean: 
+            Booleans are true/false values — they can have two values, true or false. These are generally used to test a condition, after which code is run as appropriate. So for example, a simple case would be
+            Eg: var checkIt = True;
+            But Whereas, the boolean will be used as 
+            Eg: var checkIt = 10<5;
+            The Answer will return a true or false value.
+
+            Arrays : 
+            An array is a single object that contains multiple values enclosed in square brackets and separated by commas.
+            Eg: var setOfNumbers = [10,20,30];
+            The square brackets specify an index value corresponding to the position of the value you want returned. You might have noticed that arrays in JavaScript are zero-indexed: the first element is at index 0. 
+
+            Objects : 
+            In programming, an object is a structure of code that models a real life object. You can have a simple object that represents a car park and contains information about its width and length, or you could have an object that represents a person, and contains data about their name, height, weight, what language they speak, how to say hello to them, and more.
+            Eg: 
+            var pet = {name="Babu", bread="labrador", age = "10", color = "fawn"};
+            pet.bread;
+
+
+
+
 
 
 

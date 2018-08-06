@@ -5,9 +5,18 @@
     </head>
     <body>
         <h1>Hi !!!</h1>
-        <p>My name is : Vishnu Subramanian</p>
+        <h2>My name is : Vishnu Subramanian</h2>
+        <p>I am coming from : </p>
     
         <!-- <script src="javascript/mozilla.js"></script>     -->
+        <button>Click me</button>
+        <script>
+        var button = document.querySelector('button');
+        button.onclick = function(){
+            var name = prompt("Where are you coming from? ");
+            document.write("Hi, I am coming from " + name);
+        }
+        </script>
         <script src="javascript/core.js"></script>
     </body>
 </html>

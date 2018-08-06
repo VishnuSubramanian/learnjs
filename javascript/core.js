@@ -7,3 +7,4 @@ function updatename(){
     var name = prompt("Enter the new name you need to add");
     para.textContent = 'My name is :' + name;
 }
+
