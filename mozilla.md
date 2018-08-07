@@ -233,6 +233,21 @@ language basics ::
             var pet = {name="Babu", bread="labrador", age = "10", color = "fawn"};
             pet.bread;
 
+    Basic Math in JavaScript :: 
+        Okay, maybe not. Some of us like math, some of us have hated math ever since we had to learn multiplication tables and long division in school, and some of us sit somewhere in between the two. But none of us can deny that math is a fundamental part of life that we can't get very far without. This is especially true when we are learning to program JavaScript (or any other language for that matter) — so much of what we do relies on processing numerical data, calculating new values, etc. that you won't be surprised to learn that JavaScript has a full-featured set of math functions available.
+
+        Types of Numbers:
+            In programming, even the humble decimal number system that we all know so well is more complicated than you might think. We use different terms to describe different types of decimal numbers, for example: 
+            1. Integers Eg: 10, 20, 999 ...etc
+            2. Floats  Eg: 10.22, 44.85 ...etc
+            3. Doubles  
+
+            We have different types of number system as well 
+            1. Binary - The lowest level language of computers; 0s and 1s.
+            2. Octal -  Base 8, uses 0–7 in each column.
+            3. HexaDecimal - Base 16, uses 0–9 and then a–f in each column 
+
+
 
 
 
