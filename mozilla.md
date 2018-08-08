@@ -69,7 +69,7 @@ Script loading Strategies ::
     <script defer src="js/main">
 
 
-language basics :: 
+Language basics :: 
 
 1. Variables
     Variables are the containers where you can Store the value. You can start declaring variable by var keyword at the beginning.
@@ -246,6 +246,69 @@ language basics ::
             1. Binary - The lowest level language of computers; 0s and 1s.
             2. Octal -  Base 8, uses 0–7 in each column.
             3. HexaDecimal - Base 16, uses 0–9 and then a–f in each column 
+
+            No worries about the other number systems. We will stick with the decimal system for most of the coding part. 
+            Also, For JavaScript All is numbers. 
+
+        Arithmetic Operators :: 
+            Arithmetic operators are the basic operators when use to do sums. 
+            + - Addition ( Eg: 6 + 2 )
+            - - Subtraction ( Eg 6 - 2 )
+            * - Multiplication ( Eg 6 * 2 )
+            / - Division ( Eg 6 / 2 )
+            % - Reminder and sometime called Modulo ( Returns the remainder left over after you've divided the left number into a number of integer portions equal to the right number. ) ( Eg: 8 % 3 (returns 2, as three goes into 8 twice, leaving 2 left over.) )
+            View Examples in core.js
+
+        Operator Precedences::
+            Operator precedence in JavaScript is the same as is taught in math classes in school — Multiply and divide are always done first, then add and subtract (the sum is always evaluated from left to right).
+
+            If you want to override the operator precedence then you should introduce the paranthesis into it like 
+            Eg: (num1 + num 2) / (8 + 3); This will override the normal precedence and follow the flow.
+
+        Increment and Decrement Operator ::
+            Sometimes you'll want to repeatedly add or subtract one to/from a numeric variable value. This can be conveniently done using the increment (++) and decrement(--) operators. 
+
+        Assignment Operators:: 
+            Assignment operators are operators that assign a value to a variable. We have already used the most basic one, =, loads of times — it simply assigns the variable on the left the value stated on the right:
+            Eg: var hello = 10; 
+                var check = "again";
+
+            But there are some more complex types, which provide useful shortcuts to keep your code neater and more efficient. The most common are listed below:  
+
+            Addition Assigment :
+            Adds the value on the right to the variable value on the left, then returns the new variable value 
+            x = 3; 
+            x += 4; 
+            Then 
+            x = 7; 
+
+            Subtraction Assigment : 
+            Subtracts the value on the right from the variable value on the left, and returns the new variable value
+
+            Multiplication assignment :
+            Multiples the variable value on the left by the value on the right, and returns the new variable value.
+
+            Division assignment : 
+            Divides the variable value on the left by the value on the right, and returns the new variable value.
+
+        Comparison Operators:: 
+            Sometimes we will want to run true/false tests, then act accordingly depending on the result of that test — to do this we use comparison operators.
+
+            === - Strict Equality  Eg: 5 === 1 + 4;
+            !== - Strict non equality 
+            <  - less than
+            >  - Greater than
+            <= - Less than or equal 
+            >= - Greater than or equal 
+
+            **************************
+            ****************
+            You may see some people using == and != in their tests for equality and non-equality. These are valid operators in JavaScript, but they differ from ===/!==. The former versions test whether the values are the same but not whether the values' datatypes are the same. The latter, strict versions test the equality of both the values and their datatypes. The strict versions tend to result in fewer errors, so we recommend you use them.
+
+            **************************
+            ****************   
+
+
 
 
 
