@@ -96,7 +96,7 @@ Language basics ::
             A structure that allows you to store multiple values in one single reference.
                 Eg: var learning = ["JavaScript","ReactJs","Python"];
         5. Object :
-            Basically, anything. Everything in JavaScript is an object, and can be stored in a variable. Keep this in mind as you learn.
+            Basically, anything and everything in JavaScript is an object, and can be stored in a variable. Keep this in mind as you learn.
 
     So why do we need variables? Well, variables are needed to do anything interesting in programming. If values couldn't change, then you couldn't do anything dynamic, like personalize a greeting message or change the image displayed in an image gallery.
 
@@ -308,6 +308,35 @@ Language basics ::
             **************************
             ****************   
 
+    Strings in Js :: 
+
+        The Power of Words: 
+            Words are very important to humans — they are a large part of how we communicate. Since the Web is a largely text-based medium designed to allow humans to communicate and share information, it is useful for us to have control over the words that appear on it. HTML provides structure and meaning to our text, CSS allows us to precisely style it, and JavaScript contains a number of features for manipulating strings, creating custom welcome messages and prompts, showing the right text labels when needed, sorting terms into the desired order, and much more.
+
+            Pretty much all of the programs we've shown you so far in the course have involved some string manipulation.
+
+        Creating a String :
+            Eg: var stringCreation = "Hello World! This ride is gonna be awesome";
+
+            Just like we did with numbers, we are declaring a variable, initializing it with a string value, and then returning the value. The only difference here is that when writing a string, you need to surround the value with quotes.
+
+        Single Quotes vs Double Quotes : 
+            Eg: var stringSingle = 'hiyu!!!!';
+                var stringDouble = "This is awesome";
+
+        Escaping the characters in the String : 
+            var escapeString = 'hey. I\'m vishnu from customerLabs';
+            Escaping characters means that we do something to them to make sure they are recognized as text, not part of the code. In JavaScript, we do this by putting a backslash just before the character.  
+
+        Concatenating the Strings : 
+            Eg: var first = "I am gonna be number";
+                var success = "one";
+                var result = first + success; 
+            Concatenate is a fancy programming word that means "join together". Joining together strings in JavaScript uses the plus (+) operator, the same one we use to add numbers together.
+
+                var result = first + success + 'always';
+            When you enter an actual string in your code, enclosed in single or double quotes, it is called a string literal. 
+              
 
 
 
