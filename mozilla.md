@@ -336,6 +336,38 @@ Language basics ::
 
                 var result = first + success + 'always';
             When you enter an actual string in your code, enclosed in single or double quotes, it is called a string literal. 
+
+    Strings as Objects :: 
+
+        We've said it before, and we'll say it again — everything is an object in JavaScript. When you create a string, for example by using
+
+        var string = "Hello from the other side"; 
+        Our variable becomes a string object instance, and as a result has a large number of properties and methods available to it.  
+
+        visit core.js for examples
+
+        Finding the length of a String: 
+        You simply use the length property 
+        Eg: var string = "Hello from the other side";
+        string.length();
+
+        Retrieving a Specific string character:
+        On a related note, you can return any character inside a string by using square bracket notation — this means you include square brackets ([]) on the end of your variable name. Inside the square brackets you include the number of the character you want to return, so for example to retrieve the first letter you'd do this:
+        Eg: string[0];   
+
+        Finding a Sub-string inside a String:
+        Sometimes you'll want to find if a smaller string is present inside a larger one (we generally say if a substring is present inside a string). This can be done using the indexOf() method, which takes a single parameter — the substring you want to search for.
+        Eg: string.indexOf('side');
+
+        Eg: string.slice(0);
+        The second parameter of slice() is optional: if you don't include it, the slice ends at the end of the original string. There are other options too; study the slice() page to see what else you can find out.
+
+        Changing case:
+        The String methods toLowerCase() and toUpperCase() are used to convert the strings.
+
+        Updating some parts of the String: 
+        This is done by using the replace() method. It holds two parameters.
+        Eg: string.replace("Hello", "hola");
               
 
 
