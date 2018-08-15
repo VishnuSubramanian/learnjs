@@ -368,7 +368,41 @@ Language basics ::
         Updating some parts of the String: 
         This is done by using the replace() method. It holds two parameters.
         Eg: string.replace("Hello", "hola");
-              
+
+What is an Array?
+        Arrays are generally described as "list-like objects"; they are basically single objects that contain multiple values stored in a list. Array objects can be stored in variables and dealt with in much the same way as any other type of value, the difference being that we can access each value inside the list individually, and do super useful and efficient things with the list, like loop through it and do the same thing to every value.  
+
+    Creating an array:           
+        Arrays are constructed of square brackets, which contain a list of items separated by commas.
+        Eg: var myArray = ['hello','world'];
+
+        ***************
+        each item in the array is a string, but bear in mind that you can store any item in an array — string, number, object, another variable, even another array. You can also mix and match item types — they don't all have to be numbers, strings, etc. 
+        ***************
+
+        Eg: var myNumber = [1,2,3,4,5];
+            myNumber[1];
+            var myMix = ['hello',1,2,[0,4,5]];
+
+    Accessing and modifying the array items:
+        You can then access individual items in the array using bracket notation. 
+        You can also modify an item in an array by simply giving a single array item a new value
+        Eg: myNumber[0] = 111;     
+
+        Note that an array inside an array is called a multidimensional array. You can access an item inside an array that is itself inside another array by chaining two sets of square brackets together
+        myMix[2][2];
+
+    Finding the length of an array: 
+        You can find out the length of an array (how many items are in it) in exactly the same way as you find out the length (in characters) of a string — by using the length property.
+
+Some useful array methods: 
+        
+    Converting between Strings and arrays: 
+        Check examples in core.js file
+
+    Adding and removing array items: 
+        First of all, to add or remove an item at the end of an array we can use push() and pop() respectively.    
+
 
 
 

@@ -51,22 +51,34 @@ console.log(myString.replace("Hello", "Hola"));
 // You'll then need to write a conditional test of the form operand1 operator operand2. Is the thing on the left equal to the thing on the right? Or in this case, does the method call on the left return the result on the right?
 // Hint: In this case it is probably more useful to test whether the method call isn't equal to a certain result.
 
-var list = document.querySelector('.output ul');
-list.innerHTML = '';
-var greetings = ['Happy Birthday!',
-                 'Merry Christmas my love',
-                 'A happy Christmas to all the family',
-                 'You\'re all I want for Christmas',
-                 'Get well soon'];
+// Excercises for string is here
+//https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods
 
-for (var i = 0; i < greetings.length; i++) {
-  var input = greetings[i];
-  // Your conditional test needs to go inside the parentheses
-  // in the line below, replacing what's currently there
-  if (greetings[i].indexOf("Christmas")!== -1) {
-    var result = input;
-    var listItem = document.createElement('li');
-    listItem.textContent = result;
-    list.appendChild(listItem);
-  }
-}
+
+//Working on with Arrays
+var myArray = ['this','is','gonna','be','awesome'];
+console.log("The item in the array index is " + myArray[1]);
+myArray[1] = "are";
+console.log("The item in the array index is " + myArray[1]);
+//Multidimentional array 
+var multiDim = ['hello',4,[0,1,2]];
+console.log("Example for the multidimentional array " + multiDim[2][2]);
+console.log("The length of the array is " + multiDim.length);
+
+//Some array methods 
+///Converting strings to arrays
+var myData = 'Manchester,London,Liverpool,Birmingham,Leeds,Carlisle';
+var myArray = myData.split(',');
+var myNewString = myArray.join(',');
+console.log("My new String" + myNewString);
+console.log(myArray);
+console.log("Length of my new array is " + myArray.length);
+console.log("Value of my new list is " + myArray[1]);
+console.log("The last item in the array is  " + myArray[myArray.length-1]);
+
+//Adding and removing the list in the array 
+//push and pop methods respectively 
+myArray.push('last','remove');
+console.log("Push a list in the existing array " + myArray);
+myArray.pop();
+console.log(myArray);
