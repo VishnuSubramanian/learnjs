@@ -401,7 +401,9 @@ Some useful array methods:
         Check examples in core.js file
 
     Adding and removing array items: 
-        First of all, to add or remove an item at the end of an array we can use push() and pop() respectively.    
+        First of all, to add or remove an item at the end of an array we can use push() and pop() respectively.
+
+        unshift() and shift() work in exactly the same way as push() and pop(), respectively, except that they work on the beginning of the array, not the end.    
 
 
 
