@@ -82,3 +82,15 @@ myArray.push('last','remove');
 console.log("Push a list in the existing array " + myArray);
 myArray.pop();
 console.log(myArray);
+
+//hack reactor excercise 
+var myNewArray = ['Vishnu', 'k'];
+console.log("My new arrays are " + myNewArray);
+
+function cutName(name)
+{
+
+    var newCutName = name.split("");
+    return newCutName;
+};
+console.log("Enter your name" + cutName(name));
