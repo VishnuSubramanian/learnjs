@@ -4,6 +4,11 @@
 
 ##### Understand good things take TIME....  ###########
 
+Content : 
+1. Why Js?
+2. Intro about Js
+3. Basic understanding about Js
+
 This is amazing
 
 https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
@@ -404,6 +409,8 @@ Some useful array methods:
         First of all, to add or remove an item at the end of an array we can use push() and pop() respectively.
 
         unshift() and shift() work in exactly the same way as push() and pop(), respectively, except that they work on the beginning of the array, not the end.    
+
+
 
 
 
