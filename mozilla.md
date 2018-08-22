@@ -3,6 +3,7 @@
 ## Spend good amount of time in Understanding the Js basics. 
 
 ##### Understand good things take TIME....  ###########
+###### Changes made ############
 
 Content : 
 1. Why Js?
